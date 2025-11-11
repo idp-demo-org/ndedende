@@ -19,4 +19,4 @@ jobs:
         inlineScript: |
           az account show
           az group create --name ndedende --location westeurope
-          az container create --resource-group ndedende --name ndedende --image mcr.microsoft.com/azuredocs/aci-helloworld:latest  --ports 80  --memory 1 --cpu 1
+          az container create --resource-group ndedende --name ndedende --image mcr.microsoft.com/azuredocs/aci-helloworld:latest --os-type linux  --ports 80  --memory 1 --cpu 1
